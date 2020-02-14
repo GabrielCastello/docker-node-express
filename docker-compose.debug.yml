@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  docker_node_mysql:
-    image: docker_node_mysql
+  docker_node:
+    image: docker_node
     build: .
     environment:
       NODE_ENV: development

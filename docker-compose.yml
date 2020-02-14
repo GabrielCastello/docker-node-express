@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  docker_node_mysql:
+    image: docker_node_mysql
+    build: 
+        context: .
+        dockerfile: ./docker/production/Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000

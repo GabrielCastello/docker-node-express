@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  docker_node:
+    image: docker_node
+    build: 
+        context: .
+        dockerfile: ./docker/production/Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
